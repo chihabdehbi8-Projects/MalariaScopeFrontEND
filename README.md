@@ -3,9 +3,9 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/Screen Shot 2025-11-06 at 1.25.44 AM.PNG" alt="Login Screen" width="200"/>
+  <img src="Screenshots/1.PNG" alt="Login Screen"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/Screen Shot 2025-11-06 at 1.26.20 AM.PNG" alt="Order Details" width="200"/>
+  <img src="Screenshots/2.PNG" alt="Order Details"/>
 </p>
