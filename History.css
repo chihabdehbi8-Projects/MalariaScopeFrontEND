@@ -1,0 +1,502 @@
+*{
+    font-family: Nunito;
+}
+body{
+    margin:0;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.182);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.382);
+}
+
+
+
+
+.profileName {
+    visibility: visible;
+    position: absolute;
+    right: 13.5%;
+    top: 27px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 23px;
+    width: 200px;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    opacity: .8;
+    color: black;
+}
+.profilePic {
+    visibility: visible;
+    position: absolute;
+    right: 9.5%;
+    top: 20px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+}
+.settingsIcon {
+    visibility: visible;
+    position: absolute;
+    right: 5.5%;
+    top: 20px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    height: 35px;
+    width: 35px;
+}
+.settingsIcon:hover {
+    background-color: rgba(0, 0, 0, .056);
+}
+
+.dashboard{
+    position: fixed;
+    left: .5%;
+    overflow: hidden;
+    width: 12.5%;
+    height: 100vh;
+}
+.logoContainer{
+    overflow: hidden;
+    margin-top: 5px;
+}
+.logoName {
+    position: relative;
+    left: 11px;
+    font-weight: bold;
+    font-size: 23px;
+    background: -webkit-linear-gradient(180deg, #03a49e 59%, #03a49e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 120px; /* Adjust this width to match the left property of .logoContainer */
+}
+.logoName{
+    position: relative;
+    left: 45px;
+    top: -25px;
+    font-weight: bold;
+    font-size: 23px;
+    background: -webkit-linear-gradient(180deg,#2A2A8E 59%, #349DDA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.dashMnu{
+    position: relative;
+    top: 50px;
+}
+.goArticles, .goBooks, .goVideos, .goHome, .goLiked, .logout {
+    overflow: hidden;
+    height: 40px;
+    margin: 15px auto;
+    text-align: center;
+}
+.goArticles:hover, .goBooks:hover, .goVideos:hover, .goHome:hover, .goLiked:hover {
+    border-left: 2px solid #41acf8;
+    background-color: rgba(0, 0, 0, 0.039);
+}
+
+.homeIcon, .videosIcon, .articlesIcon, .booksIcon, .likedIcon, .logoutIcon {
+    height: 25px;
+    position: relative;
+    right: 10px;
+    top: 8px;
+    opacity: 0.3;
+}
+
+
+a{ 
+    text-decoration: none;
+}
+.txtHome, .txtVideos, .txtArticles, .txtBooks, .txtLiked, .txtLogout {
+    font-size: small;
+    font-weight: bold;
+    position: relative;
+    right: 3px;
+    color: rgba(0, 0, 0, 0.309);
+}
+.supportCard {
+    position: relative;
+    top: 60px;
+    width: 80%;
+    height: 90px;
+    left: 10%;
+    border-radius: 10px;
+    background-color: #56bdf8;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.309);
+    display: none;
+}
+.goSupport {
+    position: absolute;
+    bottom: 10px;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgba(0, 0, 0, 0.731);
+    font-weight: bold;
+    font-size: small;
+}
+.needHelp {
+    color: white;
+    position: relative;
+    left: 20px;
+    top: 22px;
+    font-size: normal;
+}
+.qstIcon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 25px;
+    width: 25px;
+    background-size: 32px;
+    background-position: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.209);
+}
+
+
+
+
+/*modifications*/
+.homeIcon {
+    top: 10px;
+}
+.videosIcon {
+    right: 12.5px;
+}
+.booksIcon {
+    right: 15px;
+}
+.txtHome {
+    top: 2px;
+    right: 5px;
+}
+.txtBooks, .txtLiked {
+    right: 5px;
+}
+.txtArticles {
+    right: 1px;
+}
+.likedIcon{
+    right: 17px;
+}
+.logout{
+    position: relative;
+    top: 130px;
+}
+.logout:hover{
+    border-left: 2px solid #ff4b1f;
+    background-color: rgba(0, 0, 0, 0.039);
+}
+.logoutIcon{
+    opacity: 1;
+}
+.txtLogout{
+    color: #ff4b1f;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+.mainProfile{
+    position: absolute;
+    right: 4.5%;
+    top: 70px;
+    width: 80.2%;
+    height: fit-content;
+    padding-bottom: 0px;
+}
+.theProfileCard{
+    margin: 1%;
+    background-color: white;
+    position: relative;
+    top: 35px;
+    border-top: 1px solid transparent;
+    margin-top: 20px;
+    background-color: #41acf8;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    width: 35%;
+    float: left;
+}
+.theProfilePic{
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    outline: 1px solid white;
+}
+.theProfileName{
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 20%;
+    margin-top: 0px;
+    color: rgba(255, 255, 255, 0.759);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.thePostsNum, .theLikesNum{
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 20.5%;
+    color: rgba(255, 255, 255, 0.478);
+}
+
+
+.profileNav{
+    overflow: visible;
+    height: 45px;
+    margin-left: 1%;
+    width: 42%;
+    padding-left: 10%;
+    float: right;
+    z-index: 5;
+}
+.profileNav div{
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13px;
+    padding-bottom: 9px;
+    opacity: .5;
+    cursor: pointer;
+   
+}
+#profileVidos{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    opacity: .8;
+}
+.profilePosts{
+    float: right;
+    width: 57.9%;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.profilePosts::-webkit-scrollbar {
+    width: 10px;
+}
+
+.profilePosts::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.profilePosts::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.182);
+    border-radius: 10px;
+}
+
+.profilePosts::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.382);
+}
+.moreInfo{
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.139);
+    position: absolute;
+    left: 1%;
+    top: 30%;
+    width: 35%;
+    border-radius: 15px;
+    padding: 15px;
+}
+.bio{
+    font-size: small;
+    margin-bottom: 10px;
+}
+.aboutMe{
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #41acf8;
+}
+
+
+.newPostBtn{
+    position: absolute;
+    bottom: 200px;
+    left: 50px;
+    border-radius: 20px;
+    background-color: #56bdf8;
+    color: rgba(255, 255, 255, 0.901);
+    height: 47px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.newPostBtn span{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-bottom: 1.5px;
+}
+.newPostBack{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .556);
+    z-index: 100;
+    display: none;
+}
+
+.line, .line0{
+    height: 2px;
+    width: 90%;
+    border-radius: 4px;
+    background-color: black;
+    opacity: .9;
+    display: inline-block;
+    position: absolute;
+}
+.line{
+    transform: rotate(45deg);
+}
+.line0{
+    transform: rotate(-45deg);
+}
+.previousMalariaTests {
+    list-style: none;
+    padding: 0;
+}
+
+.testItem {
+    background-color: #fff;
+    color: black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+}
+
+.testDate {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.testResult {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.positive {
+    background-color: #4CAF50;
+}
+
+.negative {
+    background-color: #F44336;
+}
+* {
+    font-family: Nunito;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Set background color to white */
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Other CSS styles... */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* Set background color to white */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px #888;
+    max-width: 400px;
+    transition: height 0.5s; /* Add a transition for smooth animation */
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Style the buttons */
+.popup button {
+    background-color: #349DDA;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+.custom-upload-button {
+    display: block;
+    background-color: #ffffff;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-upload-button img {
+    width: 50px; /* Set the width and height to match your image size */
+    height: 50px;
+}
+
+.custom-upload-button:hover {
+    background-color: #2A7DB7; /* Change the background color on hover */
+}

@@ -1,0 +1,550 @@
+/*** uncss> filename: C:/Users/FARES/Downloads/ihm/home02.css ***/
+
+
+*{
+    font-family: Nunito;
+    
+}
+body{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    background-color: transparent;
+    height: 55px;
+    width: 100%;
+    padding-top: 5px;
+    overflow: hidden;
+    z-index: 99;
+    overflow-y: hidden;
+}
+ .logoContainer{
+    display:inline-block;
+}
+.sprt, .aboutus{
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    bottom: 25px;
+    margin-right: 23px;
+    font-weight: bold;
+}
+.sprt a, .aboutus a{
+    text-decoration: none;
+    color: #000000b1;
+}
+.sprt:hover, .aboutus:hover{
+    text-decoration: underline;
+}
+.logoImg{
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 35px;
+    position: relative;
+    top: 11px;
+    left: 10px;
+}
+.logoName {
+    position: relative;
+    left: 11px;
+    font-weight: bold;
+    font-size: 23px;
+    background: -webkit-linear-gradient(180deg, #349DDA 59%, #349DDA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 120px; /* Adjust this width to match the left property of .logoContainer */
+}
+
+
+
+
+
+
+
+.mainPage {
+    
+    background-color: white;
+    width: 100%;
+    padding-bottom: 100px; /* Adjust this value based on your design */
+    position: relative;
+}
+
+.txt{
+    position: absolute;
+    top: 130px;
+    left: 23px;
+    background-color: transparent;
+    height: 310px;
+    width: 400px;
+    overflow: hidden;
+}
+.bigTxt{
+    font-weight: bolder;
+    font-size: 57px;
+    line-height: 63px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.smallTxt{
+    font-weight: bold;
+    opacity: 0.7;
+    font-size: large;
+}
+.onlySpc{
+    color: #349DDA;
+    position: relative;
+    top: 10px;
+}
+
+
+
+.btns{
+    position: relative;
+    top: 450px;
+    left: 10px;
+    background-color: transparent;
+    height: 60px;
+    width: 400px;
+    overflow: hidden;
+    margin-left: 70px;
+}
+.createAcc a{
+    text-decoration:none;
+   color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.getStrt a{
+    text-decoration:none;
+    color: #349DDA;
+    display: inline-block;
+    margin-top: 20px;
+}
+.arr{
+    position: absolute;
+    top: 24px;
+    right: -5px;
+    height: 24px;
+    width: 24px;
+    background-size: 28px;
+    background-position: -24px;
+    background-repeat: no-repeat;
+    animation: arrowAnim 1s ease-in forwards infinite;
+}
+.icn{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    height: 24px;
+    width: 24px;
+}
+
+@keyframes arrowAnim {
+    0%{
+        background-position: center;
+        transform: scale(1);
+    }
+    20%{
+        background-position: 34px;
+        transform: scale(0);
+    }
+    20.1%{
+        background-position: -34px;
+        transform: scale(0);
+    }
+    30%{
+        background-position: center;
+        transform: scale(1);
+    }
+    100%{
+        background-position: center;
+        transform: scale(1);
+    }
+}
+.createAcc, .getStrt{
+    font-weight: bold;
+    font-size: large;
+    margin-right: 25px;
+    background-color: #349DDA;
+    display: inline-block;
+    height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    border-radius: 35px;
+}
+.getStrt{
+    background-color: transparent;
+    font-size: 21px;
+    position: absolute;
+    right: 43px;
+    top: 11px;
+}
+.hMnu {
+    margin-right: 5cm; /* Move the hMnu 3 cm to the left */
+}
+.flex-container-cards {
+    height: 100%;
+    filter: drop-shadow(#349DDA 0px 0px 1px);
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width for the card container */
+    margin-top: 600px;
+    margin-left: 150px;
+    column-gap: 100px;
+    padding-bottom: 30px; /* Add padding at the bottom to make space for the fixed footer */
+    height: calc(100vh - 160px); /* Adjust the height based on your layout (viewport height - header height - footer height) */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container-cards .card{
+    background: linear-gradient(240deg, #ffffff 0%, #ffffff 100%);
+    width: 300px;
+    -webkit-clip-path: polygon(0 0,200px 0, 210pc 10px, 280px 10px, 290px 0, 100% 0, 100% 150px, 290px 160px, 290px 300px, 100% 310px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 400px, 10px 390px, 10px 100px, 0 90px);
+    clip-path: polygon(0 0,200px 0, 210pc 10px, 280px 10px, 290px 0, 100% 0, 100% 150px, 290px 160px, 290px 300px, 100% 310px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 400px, 10px 390px, 10px 100px, 0 90px);
+    transition: all 0.2s linear;
+    filter: drop-shadow(#349DDA 0px 0px 10px);
+}
+.flex-container-cards .card:hover{
+    transform: scale(1.1);
+}
+.flex-container-cards .card .card-img-shadow img{
+    filter: drop-shadow(#349DDA 0px 0px 10px);
+}
+.flex-container-cards .card .card-img-shadow img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30px 100%, 0 calc(100% - 30px) );
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 30px 100%, 0 calc(100% - 30px) );
+    }
+.flex-container-cards .card .card-content{
+    margin: 0px 30px;
+}
+.flex-container-cards .card h2{
+    color: #349DDA;
+    text-align: center;
+}
+.flex-container-cards .card .button-shadow{
+    filter: drop-shadow(#349DDA 0px 0px 5px);
+    transition: all 0.2s ease-in;
+}
+.flex-container-cards .card .button-shadow:hover{
+    filter: drop-shadow(#349DDA 0px 0px 10px);
+}
+.flex-container-cards .card .button-shadow .card-button{
+    text-align: center;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    background: linear-gradient(45deg, #349DDA 0%,#03a49e 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+    color: black;
+    font-weight: 600;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+    color: #000000b1;
+}
+.flex-container-cards .card .button-shadow .card-button a{
+    text-decoration:none;
+    color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+    
+}
+.flex-container-cards .card .button-shadow .card-button:hover{
+    color: white;
+}
+
+
+.flex-container-cards {
+    filter: drop-shadow(#349DDA 0px 0px 1px);
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.flex-container-cards .card {
+    background: linear-gradient(240deg, #ffffff 0%, #ffffff 100%);
+    width: 300px;
+    -webkit-clip-path: polygon(0 0,200px 0, 210pc 10px, 280px 10px, 290px 0, 100% 0, 100% 150px, 290px 160px, 290px 300px, 100% 310px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 400px, 10px 390px, 10px 100px, 0 90px);
+    clip-path: polygon(0 0,200px 0, 210pc 10px, 280px 10px, 290px 0, 100% 0, 100% 150px, 290px 160px, 290px 300px, 100% 310px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 400px, 10px 390px, 10px 100px, 0 90px);
+    transition: all 0.2s linear;
+    filter: drop-shadow(#349DDA 0px 0px 10px);
+}
+
+.flex-container-cards .card:hover {
+    transform: scale(1.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer {
+    background-color: #349DDA;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative; /* Remove position: fixed; */
+    z-index: 0; /* Add z-index: 0; */
+    margin-top: 5px;
+}
+
+/* Add this CSS for the new cards */
+
+
+/* Add styles for new cards */
+.hidden-container {
+    position: relative;
+    overflow-y: auto; /* Use 'auto' to display scrollbar only when needed */
+    max-height: 800px;  /* Set the maximum height of the container */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    padding: 10px; /* Optional: Add padding for better spacing */
+  }
+
+   
+/*** uncss> filename: https://fonts.googleapis.com/css?family=Nunito&display=swap ***/
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3ig.ttf) format('truetype');
+}
+/* Make header responsive */
+@media only screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    .hMnu {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .logoContainer {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .logoName {
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .getStrt {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Make the text section responsive */
+@media only screen and (max-width: 768px) {
+    .txt {
+        position: relative;
+        top: 20px;
+        left: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .bigTxt {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+/* Make the buttons section responsive */
+@media only screen and (max-width: 768px) {
+    .btns {
+        position: relative;
+        top: 30px;
+        left: 0;
+        text-align: center;
+    }
+
+    .createAcc,
+    .getStrt {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .flex-container-cards {
+        max-width: 800px;
+        margin: 500px auto;
+        column-gap: 100px;
+        margin-top: 50px;
+    }
+}
+
+/* Make the footer responsive */
+@media only screen and (max-width: 768px) {
+    .footer {
+        padding: 10px 0;
+    }
+}
+/* Adjust positioning for smaller screens */
+@media only screen and (max-width: 768px) {
+    .txt {
+        top: 50px; /* Adjust the top position for the text section */
+    }
+
+    .btns {
+        top: 80px; /* Adjust the top position for the buttons section */
+    }
+
+    
+
+    .flex-container-cards {
+        margin-top: 500px; /* Adjust the top margin for the card section */
+    }
+}
+
+.swiper {
+    width: 300px;
+    margin-left: 600px;
+    /* padding-top: 3.125rem; */
+    margin-top: -60px;
+    /* margin-bottom: auto; */
+  }
+  
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+  
+  .swiper-pagination {
+    bottom: 1.25rem !important;
+  }
+  
+  .swiper-slide {
+    width: 10.75rem;
+    height: 28.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: self-start;
+  }
+  
+  .swiper-slide h2 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+    padding: 0 0 0 1.563rem;
+    text-transform: uppercase;
+  }
+  
+  .swiper-slide p {
+    color: #dadada;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding: 0 1.563rem;
+    line-height: 1.6;
+    font-size: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .swiper-slide a {
+    margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+    padding: 0.438em 1.875rem;
+    font-size: 0.9rem;
+  }
+  
+  .swiper-slide a:hover {
+    color: #005baa;
+  }
+  
+  .swiper-slide div {
+    display: none;
+    opacity: 0;
+    padding-bottom: 0.625rem;
+  }
+  
+  .swiper-slide-active div {
+    display: block;
+    opacity: 1;
+  }
+  
+  .swiper-slide--one {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(pictures/Nigeria.jpg) no-repeat 50% 50%/cover;
+  }
+  
+  .swiper-slide--two {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(pictures/Mozambique.jpg) no-repeat 50% 50%/cover;
+  }
+  
+  .swiper-slide--three {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(pictures/Uganda.jpg) no-repeat 50% 50%/cover;
+  }
+  
+  .swiper-slide--four {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(pictures/Mali.jpg) no-repeat 50% 50%/cover;
+  }
+  
+  .swiper-slide--five {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url(pictures/Cote\ D\ IVOIRE.jpg) no-repeat 50% 50%/cover;
+  }
+  
+  .swiper-3d .swiper-slide-shadow-left,
+  .swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+  }
+  
+  @media screen and (min-width: 48rem) {
+    main {
+      display: flex;
+      align-items: center;
+    }
+  
+    .bg,
+  .bg2 {
+      opacity: 0.1;
+    }
+  }
+  @media screen and (min-width: 93.75rem) {
+    .swiper {
+      width: 60%;
+    }
+  }
