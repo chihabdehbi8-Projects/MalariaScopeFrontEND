@@ -1,6 +1,6 @@
 # MalariaScopeFrontEND
 ---
-## 📸 Screenshots
-in the Screenshots folder 
+## 📸 Screenshots in the Screenshots folder
+ 
 ---
 ## Created by Chihab Eddine Dehbi
